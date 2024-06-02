@@ -1,0 +1,10 @@
+*.pyc
+__pycache__/
+instance/
+.webassets-cache
+.env
+venv/
+.env.*
+.idea/
+.vscode/
+.DS_Store
