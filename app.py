@@ -21,7 +21,7 @@ def explain():
     sentence = data['text']
     try:
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a language assistant."},
                 {"role": "user", "content": f"Analyze the grammar of this sentence: '{sentence}'. Explain it using simple English."}
