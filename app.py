@@ -24,7 +24,7 @@ def explain():
             model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a language assistant."},
-                {"role": "user", "content": f"Analyze the grammar of this sentence: '{sentence}'. Explain it using simple English."}
+                {"role": "user", "content": f"explain this sentence using simple English: '{sentence}'. At the end of the explanation, add meanings of the words in the sentence which are not common."}
             ]
         )
         explanation = response.choices[0].message.content.strip()
