@@ -23,7 +23,7 @@ def explain():
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "You are a language assistant."},
+                {"role": "system", "content": "You are a language assistant for non native English speakers."},
                 {"role": "user", "content": f"explain this sentence using simple English: '{sentence}'. At the end of the explanation, add meanings of the words in the sentence which are not common."}
             ]
         )
